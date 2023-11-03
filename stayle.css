@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: A-iranian-Sans;
+    src: url('A-Iranian-Sans/Iranian\ Sans.ttf');
+    font-weight: normal;
+  }
+
+  body {
+    font-family: A-iranian-Sans ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(ssscribble.svg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-clip:content-box; */
+  }
+
+
+
+
+
+
+
+
+  .modalcontainer {
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    background-color: #D8D9DA;
+    border-radius: 5px;
+    top: -50%;
+    transition: .5s ;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+
+
+.container1 {
+  width: 1000px;
+    height: 400px;
+    background-color: #61677A;
+    border-radius: 5px;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+  .status {
+    
+    height: 225px;
+  }
+
+  .bi-plus-circle-fill {
+    cursor: pointer;
+    font-size: 21px;
+  }
+
+  .rowtodo {
+    background-color: #D8D9DA;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .bi-trash:hover {
+    color: brown;
+  }
+
+  .modalcontainer span {
+    font-size: 15px;
+    display: none ;
+  }

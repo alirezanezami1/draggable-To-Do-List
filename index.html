@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stayle.css">
+    <title>Draggable To Do List</title>
+</head>
+<body>
+
+
+
+<div class="container modalcontainer">
+    <i class="bi bi-x-lg " style="cursor: pointer; position: absolute; top: 15px; right: 15px;"></i>
+    <div class="row text-center mt-5">
+        <div class="col">
+            <h5>فعالیت جدید را تایپ کنید</h5>
+        </div>
+    </div>
+    <div class="row px-3">
+        <input type="text" class="form-control my-2">
+        <span class="text-danger">فعالیتی وارد نکردید</span>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <button class="btn btn-dark my-3 px-5 send">ثبت</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container container1 m-5">
+    <div class="row text-center " style="background-color: #272829; color: rgb(238, 238, 238); border-radius: 5px;">
+        <div class="col-3 fw-bold mt-3 "><p >بدون وضعیت</p></div>
+        <div class="col-3 fw-bold mt-3"><p >شروع نشده!</p></div>
+        <div class="col-3 fw-bold mt-3"><p >در حال انجام</p></div>
+        <div class="col-3 fw-bold mt-3"><p >تموم شد :)</p></div>
+    </div>
+    <div class="row text-center">
+        <div class="col-3 status nostatus" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            <div class="row rowtodo m-2 d-flex  align-items-center justify-content-center " >
+                <div class="col-9 mt-2 fs-6"><p>فعالیت جدید</p></div>
+                <div class="col-3 "><i class="bi bi-plus-circle-fill"></i></div>
+            </div>
+        </div>
+        <div class="col-3 status" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)" >
+
+        </div>
+        <div class="col-3 status" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+
+        </div>
+        <div class="col-3 status" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
